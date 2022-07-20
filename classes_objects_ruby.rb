@@ -1,4 +1,6 @@
 class Customer
+  # Class Customer capable of displaying Customer's details, 
+  # and tracking total number of customers registered in the system
   @@total_no_of_customers = 0
   def initialize(id, name="", addr)
     @id = id
@@ -25,3 +27,4 @@ c4 = Customer.new(4, "Mother's Milk", "New Jersey")
 c4.display_details
 # c4.total_no_of_customers
 puts Customer.total_cust
+
